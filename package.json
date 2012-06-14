@@ -1,0 +1,20 @@
+{
+    "name": "kestrel"
+  , "version": "0.0.1"
+  , "description": "Kestrel client module for NodeJS"
+  , "homepage": "http://www.blangdon.com/"
+  , "keywords": ["kestrel", "client", "messaging", "queue"]
+  , "author": "brett_langdon <brett@blangdon.com>"
+  , "contributors": [
+      { "name": "brett_langdon", "email": "brett@blangdon.com" }
+    ]
+  , "repository":{
+        "type": "git"
+      , "url": "github.com/brettlangdon/node-kestrel.git"
+    }
+  , "dependencies": {
+	    "eventemitter2": ">=0.4.9"
+    }
+  , "main": "./lib/index.js"
+  , "engines": { "node": ">= 0.6.0" }
+}
