@@ -1,5 +1,5 @@
 {
-    "name": "kestrel"
+    "name": "node-kestrel"
   , "version": "0.0.1"
   , "description": "Kestrel client module for NodeJS"
   , "homepage": "http://www.blangdon.com/"

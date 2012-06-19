@@ -3,8 +3,12 @@ Node-Kestrel
 
 This module contains Kestrel client, producer and consumer classes.
 
+This module is NOT a wrapper around a Memcached Client, this a wrapper around all of the available commands for Kestrel using the net library.
+
 ## Installation
-`npm install kestrel`
+`npm install node-kestrel`
+
+Not to be mistaken with `npm install kestrel`, two different modules.
 
 ## Usage
 Check out the `examples` folder
