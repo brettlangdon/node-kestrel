@@ -1,13 +1,13 @@
 {
     "name": "node-kestrel"
-  , "version": "0.0.2"
+  , "version": "0.0.3"
   , "description": "Kestrel client module for NodeJS"
   , "homepage": "https://github.com/brettlangdon/node-kestrel"
   , "keywords": ["kestrel", "client", "messaging", "queue"]
   , "author": "brett_langdon <brett@blangdon.com> (http://brett.is)"
   , "contributors": [
       { "name": "brett_langdon", "email": "brett@blangdon.com" },
-			{ "name": "pablo_casado", "email": "p.casado.arias@gmail.com" }
+	  { "name": "pablo_casado", "email": "p.casado.arias@gmail.com" }
     ]
   , "repository":{
         "type": "git"
