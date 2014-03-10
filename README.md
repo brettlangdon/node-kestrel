@@ -30,14 +30,16 @@ Opens all server connections.
 #### close()
 Closes all server connections.
 
-#### set(queue, value, lifetime)
+#### set(queue, value, lifetime, callback)
 Send sthe Kestrel `SET` command
 
 `queue` is the string name of the queue you wish to append to.
 
 `value` is the string message that you wish to append to `queue`.
 
-`lifetime` is an interger value to represent the TTL of the message in seconds.
+`lifetime` is an integer value to represent the TTL of the message in seconds.
+
+`callback` when specified is being called once kestrel responded with STORED. No other set calls are possible until the callback has been called though. 
 
 #### get(queue, timeout)
 Tries to get a message from `queue`
@@ -96,7 +98,9 @@ Appends a message onto the queue provided in the constructor
 
 `message` string message to append to the queue
 
-`lifetime` is the TTL for the message in seconds.
+`lifetime` is the TTL for the message in seconds (OPTIONAL).
+
+`callback` when specified is being called once kestrel responded with STORED. No other set calls are possible until the callback has been called though. 
 
 #### close()
 Closes all server connections.
