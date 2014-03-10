@@ -8,7 +8,7 @@
   , "contributors": [
       { "name": "brett_langdon", "email": "brett@blangdon.com" },
       { "name": "pablo_casado", "email": "p.casado.arias@gmail.com" },
-      { "name: "Matthias Goetzke", "email": "m.goetzke@curasystems.com", "url": "https://twitter.com/mgoetzke" },
+      { "name": "Matthias Goetzke", "email": "m.goetzke@curasystems.com", "url": "https://twitter.com/mgoetzke" },
     ]
   , "repository":{
         "type": "git"
