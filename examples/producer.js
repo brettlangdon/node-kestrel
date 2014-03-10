@@ -23,11 +23,11 @@ var interval = setInterval( function(){
         console.log("STORED");
       }
     } );
-}, 0);
+}, 100);
 
 
 //close connection
 setTimeout( function(){
     clearInterval(interval);
     producer.close();
-}, 500);
+}, 6000);
