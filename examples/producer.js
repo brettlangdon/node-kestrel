@@ -16,12 +16,18 @@ producer.on('stored', function(stored){
 
 //lets input some data
 var interval = setInterval( function(){
-    producer.send( (new Date().getTime()) + ' - New Message' );
-}, 100);
+    producer.send( (new Date().getTime()) + ' - New Message', function(err){
+      if(err){
+        console.log("ERR",err);
+      } else {
+        console.log("STORED");
+      }
+    } );
+}, 0);
 
 
 //close connection
 setTimeout( function(){
     clearInterval(interval);
     producer.close();
-}, 6000);
+}, 500);
