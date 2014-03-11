@@ -13,13 +13,19 @@ function consumed(message,cb){
   console.log('Consumed Message:');
   console.dir(message);
 
-  if(counter++>1){
-    //produce failure;
+  var errorConsumingMessage = null;
+  counter++;
+
+  if(counter==2){
+    errorConsumingMessage = new Error('oops');
+  }
+  else if(counter==5){
+    //simulate failure by never answering;
     return process.exit(1);
   }
 
   if(cb){
-    cb();
+    cb(errorConsumingMessage);
   }
 }
 
