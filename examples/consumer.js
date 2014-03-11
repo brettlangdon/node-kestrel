@@ -4,14 +4,16 @@ var kestrel = require('..');
 
 var consumer = new kestrel.kestrelConsumer( 'test', {
   connectionType: kestrel.connectionType.ROUND_ROBIN,
-  servers: ['127.0.0.1:22133']
+  servers: ['127.0.0.1:22133'],
+  decode: true
 });
 
 var counter = 0;
 
 function consumed(message,cb){
-  console.log('Consumed Message:');
+  console.log('Consumed Message:',message.data.length);
   console.dir(message);
+  //console.log('.');
 
   var errorConsumingMessage = null;
   counter++;
