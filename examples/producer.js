@@ -1,3 +1,5 @@
+'use strict';
+
 var kestrel = require('../');
 
 
@@ -16,13 +18,15 @@ producer.on('stored', function(stored){
 
 //lets input some data
 var interval = setInterval( function(){
-    producer.send( (new Date().getTime()) + ' - New Message', function(err){
-      if(err){
-        console.log("ERR",err);
-      } else {
-        console.log("STORED");
-      }
-    } );
+  var message = (new Date().getTime()) + ' - New Message';
+
+  producer.send( message , function(err){
+    if(err){
+      console.log('ERR',err);
+    } else {
+      console.log('STORED:' + message);
+    }
+  } );
 }, 100);
 
 
