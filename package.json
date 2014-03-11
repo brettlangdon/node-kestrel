@@ -1,6 +1,6 @@
 {
     "name": "node-kestrel"
-  , "version": "0.0.3"
+  , "version": "0.0.4"
   , "description": "Kestrel client module for NodeJS"
   , "homepage": "https://github.com/brettlangdon/node-kestrel"
   , "keywords": ["kestrel", "client", "messaging", "queue"]
